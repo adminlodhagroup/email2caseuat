@@ -5462,6 +5462,7 @@ getCaseDetailsbyRegEmail(subject);
                email_id =  email_id.replace(/\./g,'dot');
               // alert("sender_email is "+email_id );
              //  email_id =  email_id.replace('.','dot');
+             alert("Custom Alert "+email_id+"-----"+window.location.href);
 				}
         
           if(key == 'recipient_to_email')
