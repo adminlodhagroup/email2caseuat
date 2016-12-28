@@ -3,6 +3,9 @@
   <ModulePrefs title="hello world example" /> 
   <Content type="html">
      <![CDATA[ 
+      <div>Regards
+           <h1>LODHA GROUP</h1> 
+      </div>
        Hello, world!
      ]]>
   </Content> 
