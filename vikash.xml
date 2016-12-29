@@ -35,7 +35,7 @@
 		//Get the matched content from the email START
 		/***************************************************************************************************************/
        // Fetch the array of content matches. 
-        matches = google.contentmatch.getContentMatches();
+        var matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
         var listItem;
         var extractedText;
@@ -50,7 +50,7 @@
 		var MYcc_emails = "";
 		var  mySenderEmails = "";
 		
-		alert("Before  new Gmail API Code")
+		alert("Before  new Gmail API Code"+ matches)
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
         //<!-- Iterate through the array and display output for each match. -->
@@ -127,7 +127,7 @@
 		</script>
 	  
 	
-			<div align="center"><h1>Hello World 123</h1></div>
+			<div align="center"><h1>Hello World 456</h1></div>
 			 <!-- REMOVEFROMHERE PRASHANT-->
     ]]>
   </Content>
