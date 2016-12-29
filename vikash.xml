@@ -50,7 +50,7 @@
 		var MYcc_emails = "";
 		var  mySenderEmails = "";
 		
-		//alert("Before  new Gmail API Code")
+		alert("Before  new Gmail API Code")
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
 		//*************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ New code for call GMAIL API $$$$$$$$$$$$$$$$$$$$$$$$$$***************//
         //<!-- Iterate through the array and display output for each match. -->
