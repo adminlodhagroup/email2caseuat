@@ -145,10 +145,225 @@
             }
         }
 		</script>
+
+
+	 <script type="text/javascript">
+	function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+
+	</script>
+        <script type="text/javascript">
+	function showExistingDiv() {
+   document.getElementById('showExistingDiv').style.display = "block";
+}
+
+	</script>
 	  
 	
-			<div align="center"><h1>Hello World 5555555</h1></div>
-			 <!-- REMOVEFROMHERE PRASHANT-->
+			<div id="wrapper">
+    <div class="container">
+        <form class="form-wrapper">
+            <input type="text" id="search" placeholder="Type search text here ..." required>
+            <input type="submit" value="Search" id="submit">
+        </form>  
+            <table class="bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Action</th>        
+                                        <th>CRN</th>
+                                        <th>Name</th>
+                                        <th>RM Name</th>
+                                        <th>Mobile No</th>
+                                        <th>Project Name</th>
+                                        <th>Wing</th>
+                                        <th>Type</th>
+                                    </tr>
+                                </thead>
+                                    <tr>
+                                         <td><input type="radio" name="loginkeeping" id="loginkeeping" value="loginkeeping" /></td>
+                                         <td>1210055 </td>
+                                         <td>Lovely John </td>
+                                         <td>Purnima Shetty</td>
+                                       	 <td>9930066296</td>
+                                         <td>CASA BELL GOLD</td>
+                                         <td>Wing</td>
+                                         <td>Booked Account</td>
+                                   </tr>
+                                   <tr>
+                                         <td><input type="radio" name="loginkeeping" id="loginkeeping" value="loginkeeping" /></td>
+                                         <td>1210055</td>
+                                         <td>Lovely John </td>
+                                         <td>Purnima Shetty</td>
+                                       	 <td>9930066296</td>
+                                         <td>CASA BELL GOLD</td>
+                                         <td>Wing</td>
+                                         <td>Booked Account</td>
+                                   </tr>
+                                   <tr>
+                                         <td><input type="radio" name="loginkeeping" id="loginkeeping" value="loginkeeping" /></td>
+                                         <td></td>
+                                         <td></td>
+                                         <td></td>
+                                       	 <td ></td>
+                                         <td></td>
+                                         <td></td>
+                                         <td></td>
+                                 </tr>
+                 </table>  
+                 
+                   <button  name="submit" class="submit act-button"  type="button"  value="Show Div" onclick="showDiv()" style="float:left!important; margin-right:20px;" >Create Case</button>
+                   <button type="submit" name="submit" class="submit act-button" value="Show Div" onclick="showExistingDiv()" style="float:left!important; " >Add to Existing Case</button>
+                   
+                   
+                   <div id="welcomeDiv"  style="display:none;" class="answer_list">
+						    <div id="wrap">
+							<div class="join"><img src="logo.png" width="192" height="90"/></div>
+                            <div class="forms">
+                             <form action="" method="get">
+                             <ul>
+                                 <li>
+                                 <label>Communication Type </label>
+                                     <input name="fullname" type="text" placeholder="Enter Communication Type ..." size="70" onClick="border: 1px solid #30a8da;"/></li>
+                                 <li>
+                                 <label>Interaction Mode  </label>
+                                     <input name="email" type="text" placeholder="Enter Interaction Mode ..." size="70" onClick="border: 1px solid #30a8da;"/>
+                                 </li>
+                                  <li>
+                                 <label>Interation Type </label>
+                                     <select  onClick="border: 1px solid #30a8da;">
+                                        <option value="None">-- None --</option>
+                                        <option>Type1</option>
+                                        <option>Type 2</option>
+                                        <option>Type 3</option>
+									</select>
+                                  </li>
+                                    <li>
+                                 <label>Request Type </label>
+                                      <select  onClick="border: 1px solid #30a8da;">
+                                        <option value="None">-- None --</option>
+                                        <option>Type1</option>
+                                        <option>Type 2</option>
+                                        <option>Type 3</option>
+									</select>
+                                    </li>
+                                 <li>
+                                 <label>Nature of request </label>
+                                     <input name="email" type="text" placeholder="Enter Nature of request ..." size="70" onClick="border: 1px solid #30a8da;"/>
+                                 </li>
+                                  <li>
+                                 <label>Dependency On Internal Functions</label>
+                                      <select  onClick="border: 1px solid #30a8da;">
+                                        <option value="None">-- None --</option>
+                                        <option>Type1</option>
+                                        <option>Type 2</option>
+                                        <option>Type 3</option>
+									</select>
+                                  </li>
+                                   <li>
+                                 <label>Initial remarks </label>
+                                     <input name="email" type="text" placeholder="Enter Initial remarks ..." size="70" onClick="border: 1px solid #30a8da;"/>
+                                 </li>
+                                  <li>
+                                 <label>Request For L1</label>
+                                     <select  onClick="border: 1px solid #30a8da;">
+                                        <option value="None">-- None --</option>
+                                        <option>Type1</option>
+                                        <option>Type 2</option>
+                                        <option>Type 3</option>
+									</select>
+                                  </li>
+                                   <li>
+                                 <label>Request For L2</label>
+                                     <input name="password" type="text" placeholder="Enter Request For L2 ..." size="70" onClick="border: 1px solid #30a8da;"/>
+                                  </li>
+                                  
+                                  <a class="create-acc" href="#">Submit</a>
+                                  
+                              </ul>
+                              
+                             </form>
+                             </div>
+						
+</div>
+</div>
+
+
+  <div id="showExistingDiv"  style="display:none;" class="answer_list">
+            <table class="bordered" id="component">
+                       <!--         <thead>
+                                    <tr>
+                                        <th>Action</th>        
+                                        <th>CRN</th>
+                                        <th>Name</th>
+                                        <th>RM Name</th>
+                                        <th>Mobile No</th>
+                                        <th>Project Name</th>
+                                        <th>Wing</th>
+                                        <th>Type</th>
+                                    </tr>
+                                </thead>-->
+                                    <tr>
+                                         <td><input type="radio" name="loginkeeping" id="loginkeeping" value="loginkeeping" /></td>
+                                         <td>01874895  </td>
+                                         <td>Open </td>
+                                         <td>1.71</td>
+                                       	 <td>Transfers</td>
+                                         <td>Customer Not contactable</td>
+                                         <td>null</td>
+                                          <td>07-06-2016,07:13Pm</td>
+                                         <td> <button  name="submit" class="submit act-button"  type="button" >Attach</button></td>
+                                   </tr>
+                                   <tr>
+                                         <td><input type="radio" name="loginkeeping" id="loginkeeping" value="loginkeeping" /></td>
+                                         <td>01874895  </td>
+                                         <td>Open </td>
+                                         <td>1.71</td>
+                                       	 <td>Transfers</td>
+                                         <td>Customer Not contactable</td>
+                                         <td>null</td>
+                                          <td>07-06-2016,07:13Pm</td>
+                                         <td> <button  name="submit" class="submit act-button"  type="button" >Attach</button></td>
+                                   </tr>
+                                   <tr>
+                                         <td><input type="radio" name="loginkeeping" id="loginkeeping" value="loginkeeping" /></td>
+                                         <td>01874895  </td>
+                                         <td>Open </td>
+                                         <td>1.71</td>
+                                       	 <td>Transfers</td>
+                                         <td>Customer Not contactable</td>
+                                         <td>null</td>
+                                          <td>07-06-2016,07:13Pm</td>
+                                         <td> <button  name="submit" class="submit act-button"  type="button" >Attach</button></td>
+                                 </tr>
+                                   <tr>
+                                         <td><input type="radio" name="loginkeeping" id="loginkeeping" value="loginkeeping" /></td>
+                                         <td>01874895  </td>
+                                         <td>Open </td>
+                                         <td>1.71</td>
+                                       	 <td>Transfers</td>
+                                         <td>Customer Not contactable</td>
+                                         <td>null</td>
+                                          <td>07-06-2016,07:13Pm</td>
+                                         <td> <button  name="submit" class="submit act-button"  type="button" >Attach</button></td>
+                                 </tr>
+                                   <tr>
+                                         <td><input type="radio" name="loginkeeping" id="loginkeeping" value="loginkeeping" /></td>
+                                         <td>01874895  </td>
+                                         <td>Open </td>
+                                         <td>1.71</td>
+                                       	 <td>Transfers</td>
+                                         <td>Customer Not contactable</td>
+                                         <td>null</td>
+                                          <td>07-06-2016,07:13Pm</td>
+                                         <td> <button  name="submit" class="submit act-button"  type="button" >Attach</button></td>
+                                 </tr>
+                     
+                 </table> 
+                 </div>
+
+    </div>
+</div>
     ]]>
   </Content>
 </Module>
