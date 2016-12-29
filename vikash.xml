@@ -146,7 +146,7 @@
         }
 		</script>
 
-
+	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/adminlodhagroup/email2caseuat/master/css/style.css">
 	 <script type="text/javascript">
 	function showDiv() {
    document.getElementById('welcomeDiv').style.display = "block";
@@ -218,7 +218,7 @@
                    
                    <div id="welcomeDiv"  style="display:none;" class="answer_list">
 						    <div id="wrap">
-							<div class="join"><img src="logo.png" width="192" height="90"/></div>
+							<div class="join"><img src="https://raw.githubusercontent.com/adminlodhagroup/email2caseuat/master/logo.png" width="192" height="90"/></div>
                             <div class="forms">
                              <form action="" method="get">
                              <ul>
