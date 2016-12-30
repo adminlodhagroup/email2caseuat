@@ -147,40 +147,39 @@
 
 
 		$(document).ready(function(){
-		    $.ajax({
-			
+		   $.ajax({
+					url:"https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/l1values",
 					type: "GET",
 					contentType: "application/json;charset=UTF-8",
 					mimeType: 'application/json;charset=UTF-8',
-					url:"https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/l2values/"+req_l1_value,
+					url:"https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/l1values",
 					dataType: "jsonp",
-					jsonpCallback: 'L2Values',
+					jsonpCallback: 'L1Values',
 					beforeSend: function(xhr) {
-        				xhr.setRequestHeader("Accept", "application/json");
-        				xhr.setRequestHeader("Content-Type", "application/json");
-                                  	xhr.setRequestHeader('Access-Control-Allow-Origin', '*');                                           
-          				xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
-				 },					
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+                                  xhr.setRequestHeader('Access-Control-Allow-Origin', '*');                                          
+          xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+    },
 					async:   false,
 					traditional: true,
-					success: function(fff){
-						var l2count = 1;
-						var l2valhtml = "";						
-						l2valhtml = l2valhtml + "<option value='"+l2count+"' selected>--None--</option>";
-					for (var key in fff[0]) {
-					  if (fff[0].hasOwnProperty(key)) {
-					    l2count = l2count + 1;
-					    l2valhtml = l2valhtml + "<option value='"+l2count+"' class='none"+l2count+"'>"+key+"</option>";
-					    //alert(key + " -------> " + fff[0][key]);
+					success: function(dddd){
+						var l1count = 1;
+						var l1valhtml = "";
+						l1valhtml = l1valhtml + "<option value='"+l1count+"' selected>--None--</option>";
+						for (var key in dddd[0]) {
+					  if (dddd[0].hasOwnProperty(key)) {
+					    l1count = l1count + 1;
+					    l1valhtml = l1valhtml + "<option value='"+dddd[0][key]+"' class='none"+l1count+"'>"+key+"</option>";
 					  }
 					}
-					//document.getElementById('reql2').innerHTML = l2valhtml;
-					alert("Final Html12233 L2-->: "+l2valhtml);
-					},
-				    error: function (textStatus, errorThrown) {
-					alert(textStatus+"------"+errorThrown);
-				    }
-				});
+						document.getElementById('reql1').innerHTML = l1valhtml;
+						alert("Final Html12233: "+l1valhtml);
+						},
+            error: function (textStatus, errorThrown) {
+                alert(textStatus+"------"+errorThrown);
+            }
+					});
 		});
 		</script>
 
