@@ -50,7 +50,7 @@
 		var MYcc_emails = "";
 		var  mySenderEmails = "";
 		
-		alert("Before  new Gmail API Code:: "+ matches+"----"+matches.length)
+		//alert("Before  new Gmail API Code:: "+ matches+"----"+matches.length)
 		/*
 		for (var key in matches[0]) {
 		    alert(key + "- 0 -> " + matches[0][key]);
@@ -144,6 +144,44 @@
                 	 }
             }
         }
+
+
+		$(document).ready(function(){
+		    $.ajax({
+			
+					type: "GET",
+					contentType: "application/json;charset=UTF-8",
+					mimeType: 'application/json;charset=UTF-8',
+					url:"https://email2caseuat.lodhagroup.com:8443/SpringRest/rest/l2values/"+req_l1_value,
+					dataType: "jsonp",
+					jsonpCallback: 'L2Values',
+					beforeSend: function(xhr) {
+        				xhr.setRequestHeader("Accept", "application/json");
+        				xhr.setRequestHeader("Content-Type", "application/json");
+                                  	xhr.setRequestHeader('Access-Control-Allow-Origin', '*');                                           
+          				xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+				 },					
+					async:   false,
+					traditional: true,
+					success: function(fff){
+						var l2count = 1;
+						var l2valhtml = "";						
+						l2valhtml = l2valhtml + "<option value='"+l2count+"' selected>--None--</option>";
+					for (var key in fff[0]) {
+					  if (fff[0].hasOwnProperty(key)) {
+					    l2count = l2count + 1;
+					    l2valhtml = l2valhtml + "<option value='"+l2count+"' class='none"+l2count+"'>"+key+"</option>";
+					    //alert(key + " -------> " + fff[0][key]);
+					  }
+					}
+					//document.getElementById('reql2').innerHTML = l2valhtml;
+					alert("Final Html12233 L2-->: "+l2valhtml);
+					},
+				    error: function (textStatus, errorThrown) {
+					alert(textStatus+"------"+errorThrown);
+				    }
+				});
+		});
 		</script>
 
 	<style>
